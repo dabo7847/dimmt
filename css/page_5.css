@@ -1,9 +1,6 @@
 
 .fakeBox {
     width: 250px;
-    /* border: 2px;
-    border-color: black;
-    border-style: solid; */
     background-color: beige;
     font-size: 20px;
     font-family: fantasy;
@@ -37,7 +34,43 @@ pre {
     border-style: dashed;
     margin: auto;
     padding: 10px;
+    transition-property: transform;
+    transition-duration: 1s;
+}
 
+.codeWin:hover {
+    animation-name: rotate; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.blinkWarning {
+    animation: blinker 1s linear infinite;
+    color: red;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+.footer {
+    margin: auto;
+    font-size: 14;
+    width: 98%;
+    border-color: darkred;
+    border-style: solid;
+    background-color: white;
+    margin-top: 40px;
+    padding: 5px;
+    text-align: center;
 }
 
 input {
