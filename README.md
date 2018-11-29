@@ -1,2 +1,1 @@
-TBA
-# dimmt
+# SASS-Erklärungsseite
