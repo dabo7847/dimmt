@@ -1,0 +1,53 @@
+
+.fakeBox {
+    width: 250px;
+    /* border: 2px;
+    border-color: black;
+    border-style: solid; */
+    background-color: beige;
+    font-size: 20px;
+    font-family: fantasy;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.testBox{
+    align-self: center;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 10px;
+    margin: auto;
+    width: 600px;
+    border: 2px;
+    border-style: dashed;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+pre {
+    background-color: white;
+    font-size: 18px;
+}
+
+
+.codeWin {
+    background-color: white;
+    width: 380px;
+    border: 2px;
+    border-style: dashed;
+    margin: auto;
+    padding: 10px;
+
+}
+
+input {
+    display: inline-block;
+    width: 100px;
+    background-color: lightskyblue;
+    border: 0px;
+    text-align: center;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+}

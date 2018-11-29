@@ -6,13 +6,55 @@
   <title>Sass' Mixins</title>
   <link href="css/main.css" rel="stylesheet" type="text/css">
   <link href="css/page_5.css" rel="stylesheet" type="text/css">
+
+  <script>
+     function changeBackground(obj) {
+    document.getElementById("coltext").style.color = obj.value;
+}
+  </script>
+
 </head>
 <body>
+  
+  <img src="img/placeholderHead.jpg" alt="headImage" width="100%">
   <!-- Insert navbar form main-page here -->
   <h1>Mixins</h1>
   
   <p>
-    Mit Mixins kann Code recyclet werden. Wie in Funktionen. Man kann sogar Argumente übergeben. Es ist der <b>Hammer</b>! Wie geil das ist, wird man sehen, wenn man es in css-tables beschreibt!
+    Mit Mixins kann Code recyclet werden. Wie in Funktionen. Man kann sogar Argumente übergeben. Es ist der <b>Hammer</b>! Wie geil das ist, wird man sehen, wenn man es in css-tables beschreibt! Aber so weit sind wir noch nicht. Sei nicht so ungeduldig! Alles zu seiner Zeit. Wir gucken uns ersteinmal ein Stück Code an. Das kann zum beispiel folgendermaßen aussehen:
   </p>
+  <div class="codeWin">
+  <pre>
+@mixin changeling($farbe){
+  color: $farbe;
+}
+
+#changeText 
+  @include changeling(#aabbcc);
+</pre>
+</div>
+<br>
+  <p>Das wird dann compiliert. Was das ist, solltest du eigentlich wissen, wenn nicht, schlag es halt irgendwo nach, meingott. Sei nicht so unselbstständig! Wenn du es nicht weißt, stell dir einen Zauberer vor. Oder ein Marmeladenbrot. Und wenn das fertig compiliert ist, sieht das Ergebnis so aus:</p>
+  <div class="codeWin">
+      <pre>
+#changeText {
+  color: #aabbcc;
+}
+</pre>
+    </div>
+    <p>
+      Und das kann dann jeder Browser lesen. So einfach ist das!
+    </p>
+    
+  <h2>Versuche es selbst!</h2>
+  <p>Gib eine hexadezimale Farbe in das blaue Feld ein und drück enter!</p>
+  <div class ="testBox">
+  @include changeling(<input id="color" type="text" onchange="changeBackground(this);" />)
+  <div class="fakeBox" id="coltext"> => Your color, your rules!</div>
+  </div>
+  <p>
+    Das war's auch schon mit dem Tutorial. Das Beispiel ist natürlich fake. Sowas geht mit Sass nicht. Dafür braucht man JavaScript. Du bist echt so blöd, dass du geglaubt hast, dass das mit Sass geht? lol! Dann solltest du dir die Grundlagen von Sass nocheinmal angucken! Du hast echt nix kapiert, oder? So wirst du nie zum Profi.
+  </p>
+<br><br>
 </body>
 </html>

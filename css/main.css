@@ -2,3 +2,13 @@ h1 {
     font-size: 40px;
     color: darkblue;
 }
+
+h2 {
+    color: darkblue;
+    font-size: 32px;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
