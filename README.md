@@ -11,7 +11,7 @@
 
 ##### Format: Seitennummer, Eigenschaft, CSS-Methode
 
- - Seite 1:
+ - Seite 1: Vererbung/grid
  - Seite 2:
  - Seite 3:
  - Seite 4: Nesting/Positioning
