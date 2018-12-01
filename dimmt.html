@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>dimmt</title>
+
+    <style>
+
+ .head a{
+
+padding: 25px;
+
+color: rgb(201, 10, 240);
+font-size: 25px;
+font-style: italic;
+}
+
+
+
+.head a:hover {
+          color: black;
+
+
+      }
+
+
+
+ .head{
+
+         border-bottom: 1px double rgba(12, 226, 30, 0.247);
+     }
+
+ .head nav{
+
+         display: flex;
+         justify-content: flex-end;
+
+
+
+      }
+
+.FotosUndText{
+
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+
+}
+.imageLeft{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imageRight{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.text p{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-style: italic;
+    color: deeppink;
+}
+
+
+.bg-image {
+
+    background-image: url("computing.jpg");
+    filter: blur(2px);
+    height: 200px;
+    background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container div {
+            border-radius: 10%;
+            border-top-style:inset;
+            background-color: #9ea5a2;
+             }
+
+
+.container{
+
+            margin: 0 auto;
+            display: grid;
+            width: 90%;
+            height: 400px;
+
+
+            grid-template-columns: repeat(5,1fr);
+
+            grid-gap:20px;
+  }
+       .Vererbung{
+          border-top-color: rgb(135, 197, 99);
+        }
+        .Mixins{
+            border-top-color: rgb(114, 99, 197);
+        }
+        .Varibalen{
+            border-top-color: rgb(90, 228, 10);
+        }
+        .Verschachtlung{
+            border-top-color: rgb(197, 99, 99);
+        }
+        .Import{
+            border-top-color: rgb(153, 5, 153);
+        }
+
+        .centered{
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+        .centered h1{
+            font-size: 100px;
+            color:  rgb(245, 169, 6);
+            font-style: italic;
+           text-shadow: 3px 2px red;
+        }
+
+
+
+    </style>
+</head>
+<body background="w3s.png">
+
+
+<div class="bg-image"></div>
+
+<div class="centered">
+    <h1>Dimmt.html</h1>
+
+</div>
+
+<div class="head">
+    <nav>
+        <a href="/html/">Vererbung </a> <a href="/css/">Mixins </a> <a href="/js/">Varibalen </a> <a href="/jquery/">Verschachtlung</a>
+        <a href="/jquery/">Import</a>
+    </nav>
+</div>
+
+
+<div class="FotosUndText">
+
+    <div class="imageLeft">
+        <img src="sassLeftImg.png" width="100" height="100">
+    </div>
+    <div class="text">
+        <p> Vom Sass-Anfänger zum Profi in 5 Minuten mit unseren Tutorials! </p>
+    </div>
+    <div class="imageRight">
+        <img src="glasses_sass.png" width="100" height="100">
+    </div>
+
+</div>
+
+
+<div class="container">
+
+    <div class="Vererbung">
+
+
+    </div>
+
+    <div class="Mixins">
+
+    </div>
+
+    <div class="Varibalen">
+
+    </div>
+
+    <div class="Verschachtlung">
+
+    </div>
+
+    <div class="Import">
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
