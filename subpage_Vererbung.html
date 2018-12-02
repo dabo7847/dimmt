@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta content="charset=utf-8">
+  <!-- Bitte Namen und Seitennummber einfügen -->
+  <title>SASS Eigenschaft - Vererbung</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/vererbung.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="bg-image"></div> 
+    
+    <div class="centered">
+        <h1>Dimmt.html</h1>
+    </div>
+    
+    <div class="head">
+        <nav> 
+            <a href="/html/">Vererbung  </a>   <a href="/css/">Mixins  </a>  <a href="/js/">Varibalen  </a>  <a href="/jquery/">Verschachtlung</a> <a href="/jquery/">Import</a> 
+        </nav>
+</div>
+ 
+
+<div class= "vererbung-Teil">
+
+ 
+<!--************************************************************************************************************* -->
+     <div class="erklaerung-Vererbung"> 
+         
+    <h3>Vererbung und Objektorientierung mit <span>@extend</span></h3>
+    <p>Eines der herausragenden Features von Sass ist die Vererbung von einem Selektor zum anderen. 
+        Damit lässt sich objektorientiertes CSS umsetzen, ohne das HTML mit unzähligen Klassen zu verschmutzen. 
+        Nachdem ein allgemeines Basismodul definiert wurde, reicht eine <span id="extend">@extend</span>-Anweisung aus, 
+        um ein spezifisches Modul auf dessen Regeln aufzubauen. Alle Formatierungen für das Basismodul 
+        gelten somit auch für das spezifische Modul. Auch verschachtelte Regeln werden vererbt.</p>
+</div>
+
+<!--************************************************************************************************************* -->
+     <div class="erklaerungMitCod">
+     <div class="Beispiel"><h3>Beispiel: </h3></div>
+    
+     
+   <pre> <span id="komentare">// Allgemeines Box-Modul</span>
+ 
+.box {
+    border: $stream-border-width solid $box-border-color;
+    margin: 0 auto ($std-padding * 2);
+    padding: $std-padding;
+    background-color: $box-background-color;
+    <span id="komentare"> /* … weitere verschachtelte Regeln … */</span>
+}
+    
+<span id="komentare">// Spezifisches Modul in einer anderen Datei</span>
+    
+.stream-item {
+    <span id="extend">@extend</span> .box;
+    background: white image-url("mp-thumb.png") no-repeat 11px 11px;
+    padding: 0;
+    position: relative;
+}
+                </pre>
+</div>
+  
+ <!--******************************************************************************************************************-->
+  <div class="unterschiedZwischen"><h1>UNTERSCHIED ZWISCHEN <span id="dasWort_Sass">SASS</span> & <span id="dasWort_Css">CSS</span></h1></div>    
+
+<!--******************************************************************************************************************-->
+     <div class="beispiel"> 
+           
+            <div class="beispiel-sass"> 
+                <div class="sass_css_titel"><h3>SASS:</h3></div>
+                <pre class="sass_css_pre">
+.foo {
+     color: red;
+     }
+.bar {
+     <span id="extend">@extend</span> .foo;
+     }
+                </pre>
+            </div>
+           
+            <div class="animation"> </div>
+           
+            <div class="beispiel-css"> 
+                <div class="sass_css_titel"><h3>CSS:</h3></div>
+                <pre class="sass_css_pre">
+.foo, .bar {
+           color: red;
+          
+           }
+            </pre>
+        </div>
+     </div> 
+
+
+   
+   
+   
+
+    <div class="footer"> </div>
+
+</div>
+
+
+
+</body>
+</html>
+
+
