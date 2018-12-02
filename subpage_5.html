@@ -8,16 +8,21 @@
   <link href="css/page_5.css" rel="stylesheet" type="text/css">
 
   <script>
-     function changeBackground(obj) {
-    document.getElementById("coltext").style.color = obj.value;
-}
+    function changeBackground(obj) {
+      document.getElementById("coltext").style.color = obj.value;
+    }
   </script>
 <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png">
 </head>
 <body>
   
   <img src="img/placeholderHead.jpg" alt="headImage" width="100%">
-  <!-- Insert navbar form main-page here -->
+  <div class="head">
+    <nav>
+        <a href="/html/">Vererbung </a> <a href="subpage_5.html">Mixins </a> <a href="/js/">Varibalen </a> <a href="/jquery/">Verschachtlung</a>
+        <a href="/jquery/">Import</a><a href="dimmt.html">Home</a>
+    </nav>
+  </div>
   <h1>Mixins</h1>
   
   <p>
@@ -49,11 +54,11 @@
   <h2>Versuche es selbst!</h2>
   <p>Gib eine hexadezimale Farbe in das blaue Feld ein und drück enter!</p>
   <div class ="testBox">
-  @include changeling(<input id="color" type="text" onchange="changeBackground(this);" />)
+  @include changeling(<input id="color" type="text" value="#DD0101" onchange="changeBackground(this);" />)
   <div class="fakeBox" id="coltext"> => Your color, your rules!</div>
   </div>
   <p>
-    Das war's auch schon mit dem Tutorial. Das Beispiel ist natürlich fake. Sowas geht mit Sass nicht. Dafür braucht man JavaScript. Du bist echt so blöd, dass du geglaubt hast, dass das mit Sass geht? lol! Dann solltest du dir die Grundlagen von Sass nocheinmal angucken! Du hast echt nix kapiert, oder? So wirst du nie zum Profi.
+    Das war's auch schon mit dem Tutorial. Das Beispiel ist natürlich fake. Sowas geht mit Sass nicht. Dafür braucht man JavaScript. Du bist echt so blöd, dass du geglaubt hast, dass das mit Sass geht? lol! Dann solltest du dir die <a href="404">Grundlagen</a> von Sass nocheinmal angucken! Du hast echt nix kapiert, oder? So wirst du nie zum Profi.
   </p>
   <div class="footer">
     <b class ="blinkWarning">Warnung:</b> Die Code-Schnipsel sind mittels Rotation vor dem Diebstahl geistigen Eigentums geschützt. Außerdem ist Copy und Paste sowieso bad practice. Wie wäre es mal zu lernen, wie man sein eigenes Gehirn verwendet, hm?

@@ -3,129 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>dimmt-Hauptseite</title>
-
-    <style>
-
- .head a{
-
-padding: 25px;
-
-color: rgb(201, 10, 240);
-font-size: 25px;
-font-style: italic;
-}
-
-
-
-.head a:hover {
-          color: black;
-
-
-      }
-
-
-
- .head{
-
-         border-bottom: 1px double rgba(12, 226, 30, 0.247);
-     }
-
- .head nav{
-
-         display: flex;
-         justify-content: flex-end;
-
-
-
-      }
-
-.FotosUndText{
-
-display: grid;
-grid-template-columns: 1fr 2fr 1fr;
-
-}
-.imageLeft{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.imageRight{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.text p{
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    font-style: italic;
-    color: deeppink;
-}
-
-
-.bg-image {
-
-    background-image: url("computing.jpg");
-    filter: blur(2px);
-    height: 200px;
-    background-position: center;
-     background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.container div {
-            border-radius: 10%;
-            border-top-style:inset;
-            background-color: #9ea5a2;
-             }
-
-
-.container{
-
-            margin: 0 auto;
-            display: grid;
-            width: 90%;
-            height: 400px;
-
-
-            grid-template-columns: repeat(5,1fr);
-
-            grid-gap:20px;
-  }
-       .Vererbung{
-          border-top-color: rgb(135, 197, 99);
-        }
-        .Mixins{
-            border-top-color: rgb(114, 99, 197);
-        }
-        .Varibalen{
-            border-top-color: rgb(90, 228, 10);
-        }
-        .Verschachtlung{
-            border-top-color: rgb(197, 99, 99);
-        }
-        .Import{
-            border-top-color: rgb(153, 5, 153);
-        }
-
-        .centered{
-            position: absolute;
-            top: 15%;
-            left: 50%;
-            transform: translate(-50%, -50%)
-        }
-        .centered h1{
-            font-size: 100px;
-            color:  rgb(245, 169, 6);
-            font-style: italic;
-           text-shadow: 3px 2px red;
-        }
-
-
-
-    </style>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/dimmt.css" rel="stylesheet" type="text/css">
+    <!-- styles moved to dimmt.css (local styles) and main.css (navigation) -->
 </head>
 <body background="w3s.png">
 
@@ -139,8 +19,8 @@ grid-template-columns: 1fr 2fr 1fr;
 
 <div class="head">
     <nav>
-        <a href="/html/">Vererbung </a> <a href="/css/">Mixins </a> <a href="/js/">Varibalen </a> <a href="/jquery/">Verschachtlung</a>
-        <a href="/jquery/">Import</a>
+        <a href="/html/">Vererbung </a> <a href="subpage_5.html">Mixins </a> <a href="/js/">Varibalen </a> <a href="/jquery/">Verschachtlung</a>
+        <a href="/jquery/">Import</a><a href="dimmt.html">Home</a>
     </nav>
 </div>
 
@@ -168,7 +48,8 @@ grid-template-columns: 1fr 2fr 1fr;
     </div>
 
     <div class="Mixins">
-
+        <em>"Mixins kombinieren die Schönheit der Funktionen mit der Ausdrucksstärke eines Giovanni Trappatoni."</em><br>
+        <b>Leonardo DiCabpio</b>
     </div>
 
     <div class="Varibalen">

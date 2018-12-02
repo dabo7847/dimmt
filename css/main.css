@@ -12,3 +12,23 @@ p {
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.head a {
+    padding: 25px;
+    color: rgb(201, 10, 240);
+    font-size: 25px;
+    font-style: italic;
+}
+
+.head a:hover {
+    color: black;
+}
+
+.head {
+     border-bottom: 1px double rgba(12, 226, 30, 0.247);
+}
+
+.head nav{
+     display: flex;
+     justify-content: flex-end;
+}
