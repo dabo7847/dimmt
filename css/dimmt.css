@@ -33,6 +33,7 @@
     border-radius: 10%;
     border-top-style:inset;
     background-color: #9ea5a2;
+    padding: 15px;
 }
 
 .container {
@@ -42,6 +43,12 @@
     height: 400px;
     grid-template-columns: repeat(5,1fr);
     grid-gap:20px;
+    margin-top: 15px;
+}
+
+.container h3{
+    font-size: 30px;
+    color: dodgerblue;
 }
 
 .Vererbung{
@@ -49,6 +56,7 @@
 }
 
 .Mixins {
+    background-image: linear-gradient(yellow, red);
     border-top-color: rgb(114, 99, 197);
 }
 
