@@ -13,6 +13,6 @@
 
  - Seite 1: Vererbung/grid
  - Seite 2:
- - Seite 3:
+ - Seite 3: Geschachtelte Media Queries/floating
  - Seite 4: Nesting/Positioning
  - Seite 5: Mixins/cssTables
