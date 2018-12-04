@@ -50,9 +50,11 @@
 .container h3{
     font-size: 30px;
     color: dodgerblue;
+    text-align: center;
 }
 
 .Vererbung{
+    background-image: linear-gradient(blue, red);
     border-top-color: rgb(135, 197, 99);
 }
 
@@ -62,14 +64,17 @@
 }
 
 .Varibalen {
+    background-image: linear-gradient(green, yellow);
     border-top-color: rgb(90, 228, 10);
 }
 
 .Verschachtlung {
+    background-image: linear-gradient(blue, green);
     border-top-color: rgb(197, 99, 99);
 }
 
 .Import {
+    background-image: linear-gradient(red, blue);
     border-top-color: rgb(153, 5, 153);
 }
 
