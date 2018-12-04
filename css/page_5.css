@@ -126,6 +126,10 @@ input {
     text-align: center;
 }
 
+h1 {
+    text-align: center;
+}
+
 body {
     background-color: lightgoldenrodyellow;
 }

@@ -23,7 +23,7 @@
 .bg-image {
     background-image: url("computing.jpg");
     filter: blur(2px);
-    height: 200px;
+    height: 250px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
