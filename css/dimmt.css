@@ -56,6 +56,7 @@
 .Vererbung{
     background-image: linear-gradient(blue, red);
     border-top-color: rgb(135, 197, 99);
+    color: white;
 }
 
 .Mixins {
