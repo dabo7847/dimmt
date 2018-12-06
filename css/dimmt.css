@@ -67,16 +67,19 @@
 .Varibalen {
     background-image: linear-gradient(green, yellow);
     border-top-color: rgb(90, 228, 10);
+    color: darkred;
 }
 
 .Verschachtlung {
     background-image: linear-gradient(blue, green);
     border-top-color: rgb(197, 99, 99);
+    color: yellow;
 }
 
 .Import {
     background-image: linear-gradient(red, blue);
     border-top-color: rgb(153, 5, 153);
+    color: white;
 }
 
 .centered {
@@ -98,7 +101,7 @@
     width: 155px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
     margin-top: -80px;
-    margin-left: 60px;
+    margin-left: 65px;
     margin-right: auto;
     align-self: center;
     text-align: center;
