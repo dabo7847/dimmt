@@ -5,7 +5,7 @@
   <!-- Bitte Namen und Seitennummber einfügen -->
   <title>SASS Eigenschaft - EIGENSCHAFTNAME</title>
   <link href="css/main.css" rel="stylesheet" type="text/css">
-  <link href="uebung08.css" rel="stylesheet" type="text/css"> 
+  <link href="subpage_2.css" rel="stylesheet" type="text/css"> 
   
 </head>
 <body>
@@ -18,15 +18,15 @@
     <aside class="links"> 
         <p>
         </p></aside>
-<section class="container1">
+<article class="container1">
     
-  <article class="center"> 
+  <section class="center"> 
         <p> Du kannst Variablen benutzen um Informationen in deinem gesamten Stylesheet wiederverwenden zu können.
           Du kannst Werte wie Farben, Schriftarten oder irgendwelche CSS Werte speichern die du später wiederverwenden möchtest.
             Sass benutzt das<span id="besondrswort"> $ </span> Symbol um aus einem Text eine Variable zu machen.
             Hier ist ein Beispiel:</p>
               
-<div class="containernew">
+<section class="containernew">
 <div id="Beispiel"> <h3>SASS</h3> </div>
 <pre id="pre1"> <span id="dieVeriablen">$font-stack: Helvetica,sans-serif;</span>
 $primary-color: #333
@@ -37,28 +37,28 @@ color: <span id="dieVeriablen">$primary-color;</span>
 }
 </pre> 
 
-  </div>
+</section>
 
-  </article>
+  </section>
            
- <article class="center2">
+ <section class="center2">
 <p>Wenn Sass verarbeitet wird nimmt es die definierten Variablen für<span id="besondrswort">$font-stack</span> 
    und <span id="besondrswort"> $primary-color </span> und gibt normales CSS mit den definierten Werten der Variablen zurück.
     Das kann sehr mächtig sein wenn mit Markenfarben gearbeitet wird und diese über die gesamte Seite wiederverwendet werden sollen.</p>        
 
 
-<div class="containernew">
+<section class="containernew">
 <div id="Beispiel"> <h3>Beispiel</h3> </div>
 <pre id="pre2">body {
 font: 100% Helvetica, sans-serif;
 color: #333;
 } 
 </pre> 
-</div>
-  
- </article>
-
 </section>
+  
+ </section>
+
+</article>
         <aside class="rechts">
             <p>Wollen Sie SASS Lernen?
               Hier Finden Sie die beste online kurse 
