@@ -1,24 +1,85 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta content="charset=utf-8">
+  <meta charset="utf-8">
   <!-- Bitte Namen und Seitennummber einfügen -->
   <title>SASS Eigenschaft - EIGENSCHAFTNAME</title>
   <link href="css/main.css" rel="stylesheet" type="text/css">
-  <link href="css/page_2.css" rel="stylesheet" type="text/css">
+  <link href="uebung08.css" rel="stylesheet" type="text/css"> 
+  
 </head>
 <body>
-    <embed class="headerFrame" src="header.html" >
+  <embed class="headerFrame" src="header.html" >
+    <header class="header">
+     
+        <h1> VARIABLEN </h1>
+    </header>
+   <div class="container_main">
+    <aside class="links"> 
+        <p>
+        </p></aside>
+<section class="container1">
+    
+  <article class="center"> 
+        <p> Du kannst Variablen benutzen um Informationen in deinem gesamten Stylesheet wiederverwenden zu können.
+          Du kannst Werte wie Farben, Schriftarten oder irgendwelche CSS Werte speichern die du später wiederverwenden möchtest.
+            Sass benutzt das<span id="besondrswort"> $ </span> Symbol um aus einem Text eine Variable zu machen.
+            Hier ist ein Beispiel:</p>
+              
+<div class="containernew">
+<div id="Beispiel"> <h3>SASS</h3> </div>
+<pre id="pre1"> <span id="dieVeriablen">$font-stack: Helvetica,sans-serif;</span>
+$primary-color: #333
+                                      
+body { 
+font: 100% <span id="dieVeriablen">$font-stack;</span>
+color: <span id="dieVeriablen">$primary-color;</span>
+}
+</pre> 
 
-  <div class="flexContainer"> 
-    <div > 
-      <h3>Tach</h3> 
-      </div> 
-        <div > <h3>Guten Tach</h3>
-      </div> 
-      <div > 
-        <h4>Buongiorno</h4> 
-      </div> </div>
+  </div>
+
+  </article>
+           
+ <article class="center2">
+<p>Wenn Sass verarbeitet wird nimmt es die definierten Variablen für<span id="besondrswort">$font-stack</span> 
+   und <span id="besondrswort"> $primary-color </span> und gibt normales CSS mit den definierten Werten der Variablen zurück.
+    Das kann sehr mächtig sein wenn mit Markenfarben gearbeitet wird und diese über die gesamte Seite wiederverwendet werden sollen.</p>        
+
+
+<div class="containernew">
+<div id="Beispiel"> <h3>Beispiel</h3> </div>
+<pre id="pre2">body {
+font: 100% Helvetica, sans-serif;
+color: #333;
+} 
+</pre> 
+</div>
+  
+ </article>
+
+</section>
+        <aside class="rechts">
+            <p>Wollen Sie SASS Lernen?
+              Hier Finden Sie die beste online kurse 
+            <div class="Fotoanimation">
+              <img src="img/kurs.png" alt="foto kurs" width="300" height="100">  </div>
+            </p> 
+
+            </aside>
+          
+ </div>
+      <footer>
+          
+          <h3>Für weitre informationen über SASS/SCSS klicen Sie Hier </h3>
+          
+         
+      </footer>
+
+  
+
+    </body>
+</html>
 
 </body>
 </html>
