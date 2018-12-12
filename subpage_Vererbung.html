@@ -17,31 +17,33 @@
 
 
 
-<div class= "vererbung-Teil">
+<main>
     
  
 <!--************************************************************************************************************* -->
-     <div class="erklaerung-Vererbung"> 
+
+<content id="derObereTeil">
+<section class="erklaerung-Vererbung"> 
             
-    <h3>Vererbung und Objektorientierung mit <span>@extend</span></h3>
+    <h3>Vererbung und Objektorientierung mit <span id="extend">@extend</span></h3>
     <p>Eines der herausragenden Features von <span id="dasWort_Sass">SASS</span> ist die Vererbung von einem Selektor zum anderen. 
         Damit lässt sich objektorientiertes CSS umsetzen, ohne das HTML mit unzähligen Klassen zu verschmutzen. 
         Nachdem ein allgemeines Basismodul definiert wurde, reicht eine <span id="extend">@extend</span>-Anweisung aus, 
         um ein spezifisches Modul auf dessen Regeln aufzubauen. Alle Formatierungen für das Basismodul 
         gelten somit auch für das spezifische Modul. Auch verschachtelte Regeln werden vererbt.</p>
-    <p id="sieheDenBeispiel">siehe den Beispiel ==></p>
-</div>
+    <p id="sieheDasBeispiel">siehe das Beispiel ==></p>
+</section>
 
 <!--************************************************************************************************************* -->
-     <div class="erklaerungMitCod">
-     <div class="Beispiel"><h3>Beispiel: </h3></div>
+<section class="erklaerungMitCod">
+     <div class="titelVonErklaerungMitCod"><h3><span id="titles">BEISPIEL:</span></h3></div>
     
      
    <pre> <span id="komentare">// Allgemeines Box-Modul</span>
  
 .box {
-    border: $stream-border-width solid $box-border-color;
-    margin: 0 auto ($std-padding * 2);
+    border: $stream-border-width <span class="DieWerte">solid</span> $box-border-color;
+    margin: <span class="DieWerte">0 auto</span> ($std-padding * 2);
     padding: $std-padding;
     background-color: $box-background-color;
     <span id="komentare"> /* … weitere verschachtelte Regeln … */</span>
@@ -51,62 +53,87 @@
     
 .stream-item {
     <span id="extend">@extend</span> .box;
-    background: white image-url("mp-thumb.png") no-repeat 11px 11px;
-    padding: 0;
-    position: relative;
+    background: <span class="DieWerte">white</span> image-url("mp-thumb.png") <span class="DieWerte">no-repeat 11px 11px</span> ;
+    padding: <span class="DieWerte">0</span>;
+    position: <span class="DieWerte">relative</span>;
 }
-                </pre>
-</div>
-  
+</pre>
+</section>
+</content>
+
  <!--******************************************************************************************************************-->
-  <div class="unterschiedZwischen"><h1>UNTERSCHIED ZWISCHEN <span id="dasWort_Sass">SASS</span> & <span id="dasWort_Css">CSS</span></h1></div>    
+ <content id="derMittlereTeil">
+ <div class="unterschiedZwischen"><h1>UNTERSCHIED ZWISCHEN <span id="dasWort_Sass">SASS</span> & <span id="dasWort_Css">CSS</span></h1></div>    
 
 <!--******************************************************************************************************************-->
-     <div class="beispiel"> 
-           
-        <div class="animation"> </div>
-        
-        
-        <div class="beispiel-sass"> 
-                <div class="sass_css_titel"><h3>SASS:</h3></div>
-                <pre class="sass_css_pre">
-.foo {
-     color: red;
-     }
-.bar {
-     <span id="extend">@extend</span> .foo;
-     }
-                </pre>
-            </div>
-           
-         
-           
-            <div class="beispiel-css"> 
-                <div class="sass_css_titel"><h3>CSS:</h3></div>
-                <pre class="sass_css_pre">
-.foo, .bar {
-           color: red;
-          
-           }
+    
+
+<div class="beispiele"> 
+        <div class="beispiele-sass"> 
+            <div class="sass_css_titel"><h3><span id="titles">CSS: </span></h3></div>
+            <pre class="sass_css_pre">
+@keyframes nach_rechts_bewegen{
+    from {left: <span class="DieWerte">0px</span>;}
+    to {left: <span class="DieWerte">700px</span>;}
+}   
+#car1:hover,#car2:hover{
+    width: <span class="DieWerte">200px</span>;
+    height: <span class="DieWerte">100px</span>;         
+    position: <span class="DieWerte">relative</span>; 
+    animation: <span class="DieWerte">nach_rechts_bewegen 4s</span>;           
+} 
+
             </pre>
         </div>
+         
+       <div class="beispiele-css"> 
+                <div class="sass_css_titel"><h3><span id="titles">SCSS</span></h3></div>
+                <pre class="sass_css_pre">
+@keyframes nach_rechts_bewegen{
+        from {left: <span class="DieWerte">0px</span>;}
+         to {left: <span class="DieWerte">700px</span>;}
+}              
+#car1:hover{
+        width: <span class="DieWerte">200px</span>;
+        height: <span class="DieWerte">100px</span>;         
+        position: <span class="DieWerte">relative</span>; 
+        animation:<span class="DieWerte">nach_rechts_bewegen 4s</span> ;           
+} 
+#car2:hover{
+        <span id="extend">@extend</span> #car1:hover;
+}                    
+                </pre>
+        </div>
     
-    
-        <div class="animation"> </div>
+        <div class="ergebnis"> 
+            <div class="sass_css_titel"><h3><span id="titles">ERGEBNIS:</span></h3></div>
+              <div class="animation">
+                <div id="car1"></div>
+                <div id="car2"></div>
+              </div>
+            
+        </div> 
+        
     </div> 
+
+</content>
 <!--****************************************************************************************************************************-->
-
-
-<!---->
-    <footer> 
      
-        <p>Wer einmal mit SASS angefangen hat möchte nicht mehr zurück zu normalem CSS gehen. Warum sollte man auch, bietet so viele Möglichkeiten das Arbeiten mit CSS sauberer, einfacher und schneller zu machen. Zurück zu normalen CSS zu gehen wäre einfach nur vorsätzliche Zeitverschwendung.<p>
+<section class="sectionVorfooter">
+<p>Wer einmal mit SASS angefangen hat möchte nicht mehr zurück zu normalem CSS gehen. 
+Warum sollte man auch, bietet so viele Möglichkeiten das Arbeiten mit CSS sauberer, 
+einfacher und schneller zu machen. Zurück zu normalen CSS zu gehen wäre einfach nur 
+vorsätzliche Zeitverschwendung.<p>
+</section>
 
-           <p> Weitere Informationen und eine ausführliche Übersicht über alle <span id="dasWort_Sass">SASS</span> Funktionen finden sich in <a href="dimmt.html"> DIMMT!</a></p>
+<footer>
+<p> Weitere Informationen und eine ausführliche Übersicht über alle 
+<span id="dasWort_Sass">SASS</span> Funktionen finden sich in
+<a href="dimmt.html"> DIMMT!</a></p>
+</footer>
 
-        </footer>
     
-</div>
+</main>
 
 
 

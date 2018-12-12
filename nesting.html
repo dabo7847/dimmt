@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>SASS Nesting</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/nesting.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <h1 class="heading-fix">SASS-Tutorialseite</h1>
+    <img src="img/placeholderHead.jpg" alt="" id="headerimg">
+    <nav>
+      <h2 class="heading-fix">Navigation</h2>
+      <a href="vererbung.html">Vererbung</a>
+      <a href="mixins.html">Mixins</a>
+      <a href="variablen.html">Variablen</a>
+      <a href="nesting.html">Verschachtelung</a>
+      <a href="imports.html">Imports</a>
+      <a href="mediaqueries.html">Media Queries</a>
+      <a href="dimmt.html">Home</a>
+    </nav>
+  </header>
+  <main>
+    <h1 class="heading-fix">Inhalt</h1>
+    <article>
+      <header>
+        <h2>SASS-Verschachtelungen</h2>
+      </header>
+      <section id="erklaerungen">
+        <h3 class="heading-fix">Erklärungen</h3>
+        <section>
+          <h4>Selektorenverkettung in CSS</h4>
+          <p>Möchte man mit CSS Elemente selektieren, die innerhalb von anderen liegen, hat man hierzu verschiedene Möglichkeiten.</p>
+          <section>
+            <h5>Auswahl aller innerhalb eines Elements</h5>
+            <p>Möchte man alle Elemente eines bestimmten Typs auswählen, die innerhalb eines anderen liegens, so kann man einen der einfachsten CSS-Selektoren verwenden und beide Elementnamen durch ein Leerzeichen getrennt schreiben.</p>
+            <details>
+              <summary>Beispiel</summary>
+              <p>Auswahl aller headings innerhalb eines articles: <mark>article h1</mark></p>
+            </details>
+          </section>
+          <section>
+            <h5>Auswahl aller innerhalb eines Elements, die direkte Kinder sind</h5>
+            <p>Möchte man nur Elemente eines bestimmten Typs auswählen, die einem anderen direkt folgen, so kann man obigen CSS-Selektor in leicht abgewandelter Form nutzen und das Leerzeichen durch ein "&gt;"-Zeichen tauschen.</p>
+            <details>
+              <summary>Beispiel</summary>
+              <p>Auswahl aller headings innerhalb eines articles die direkte Kinder sind: <mark>article > h1</mark></p>
+            </details>
+          </section>
+        </section>
+        <section>
+          <h4>Übersichtlichkeitsprobleme</h4>
+          <p>Bei komplexen Elementen, zum Beispiel bei dem Erstellen eines Editorfeldes innerhalb einer Website kann man mit diesen CSS-Selektoren schnell seine Grenzen erreichen und den Überblick darüber verlieren, welche Elemente man selektiert hat.</p>
+          <p>Daher bietet es sich die Elemente im CSS genau so zu verschachteln, wie man es im HTML tut, so dass eine Übersichtlichkeit gewährleistet wird.</p>
+        </section>
+        <section>
+          <h4>Selektorenverschachtelung mit SASS</h4>
+          <p>Möchte man mit SASS Elemente verschachtelt auswählen, so geht dies sehr viel einfacher als mit CSS. SASS erlaubt es die Elemente genau so zu verschachteln, wie sie später im HTML benutzt werden.</p>
+        </section>
+      </section>
+      <aside id="codebox">
+        <h3>Code-Beispiel</h3>
+        <div class="codebox">
+          <div class="codebox-content" id="box_css">
+            <ol>
+              <li>nav ul {</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;margin: 0;</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;padding: 0;</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;list-style: none;</li>
+              <li>}</li>
+              <li></li>
+              <li>nav li {</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;display: inline-block;</li>
+              <li>}</li>
+              <li></li>
+              <li>nav a {</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;display: block;</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;padding: 6px 12px;</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;</li>
+              <li>}</li>
+            </ol>
+          </div>
+          <div class="codebox-content" id="box_scss">
+            <ol>
+              <li>nav {</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;ul {</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin: 0;</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 0;</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list-style: none;</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;li {</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: inline-block;</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;a {</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: block;</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 6px 12px;</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+              <li>}</li>
+            </ol>
+          </div>
+          <div class="codebox-placeholder">
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          </div>
+          <div class="codebox-header">
+            <pre>Wähle deine Syntax:</pre>
+            <a href="#box_scss">SCSS</a>
+            <a href="#box_css">CSS</a>
+          </div>
+        </div>
+      </aside>
+      <footer>
+        <h2>Zusammenfassung</h2>
+        <p>Zusammenfassend lässt sich sagen, dass SASS hiermit eine sehr gute Funktionalität zu CSS hinzufügt und das Arbeiten um einiges erleichtert.</p>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
