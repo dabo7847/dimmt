@@ -34,7 +34,7 @@
     <p id="sieheDasBeispiel">siehe das Beispiel ==></p>
 </section>
 
-<!--************************************************************************************************************* -->
+
 <section class="erklaerungMitCod">
      <div class="titelVonErklaerungMitCod"><h3><span id="titles">BEISPIEL:</span></h3></div>
     
@@ -51,7 +51,7 @@
     
 <span id="komentare">// Spezifisches Modul in einer anderen Datei</span>
     
-.stream-item {
+.stream-item{
     <span id="extend">@extend</span> .box;
     background: <span class="DieWerte">white</span> image-url("mp-thumb.png") <span class="DieWerte">no-repeat 11px 11px</span> ;
     padding: <span class="DieWerte">0</span>;
@@ -65,11 +65,9 @@
  <content id="derMittlereTeil">
  <div class="unterschiedZwischen"><h1>UNTERSCHIED ZWISCHEN <span id="dasWort_Sass">SASS</span> & <span id="dasWort_Css">CSS</span></h1></div>    
 
-<!--******************************************************************************************************************-->
-    
 
-<div class="beispiele"> 
-        <div class="beispiele-sass"> 
+<content class="beispiele"> 
+        <section class="beispiele-sass"> 
             <div class="sass_css_titel"><h3><span id="titles">CSS: </span></h3></div>
             <pre class="sass_css_pre">
 @keyframes nach_rechts_bewegen{
@@ -84,9 +82,9 @@
 } 
 
             </pre>
-        </div>
+        </section>
          
-       <div class="beispiele-css"> 
+       <section class="beispiele-css"> 
                 <div class="sass_css_titel"><h3><span id="titles">SCSS</span></h3></div>
                 <pre class="sass_css_pre">
 @keyframes nach_rechts_bewegen{
@@ -103,7 +101,7 @@
         <span id="extend">@extend</span> #car1:hover;
 }                    
                 </pre>
-        </div>
+       </section>
     
         <div class="ergebnis"> 
             <div class="sass_css_titel"><h3><span id="titles">ERGEBNIS:</span></h3></div>
@@ -114,18 +112,20 @@
             
         </div> 
         
-    </div> 
+    </content> 
 
 </content>
 <!--****************************************************************************************************************************-->
      
 <section class="sectionVorfooter">
-<p>Wer einmal mit SASS angefangen hat möchte nicht mehr zurück zu normalem CSS gehen. 
+<div>
+    <p>Wer einmal mit SASS angefangen hat möchte nicht mehr zurück zu normalem CSS gehen. 
 Warum sollte man auch, bietet so viele Möglichkeiten das Arbeiten mit CSS sauberer, 
 einfacher und schneller zu machen. Zurück zu normalen CSS zu gehen wäre einfach nur 
 vorsätzliche Zeitverschwendung.<p>
+    </div>
 </section>
-
+<!--****************************************************************************************************************************-->
 <footer>
 <p> Weitere Informationen und eine ausführliche Übersicht über alle 
 <span id="dasWort_Sass">SASS</span> Funktionen finden sich in
