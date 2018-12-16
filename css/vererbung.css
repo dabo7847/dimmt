@@ -7,7 +7,7 @@
 
 main{
     padding: 20px; 
-    width: 97%;
+    width: auto;
     height: auto;
  
    
@@ -111,7 +111,7 @@ font-family: monospace;
 .beispiele{
    background-color: rgba(247, 246, 252, 0.007); 
    display: grid; 
-   grid-template-columns: 450px 450px 2fr;  
+   grid-template-columns: 1fr 1fr 2fr;  
    grid-template-rows: minmax(auto, 300px);
    grid-gap:10px;
    
@@ -167,7 +167,7 @@ font-size:  20px ;
 }
 
 .sectionVorfooter{
-   
+
     grid-column: 1/7;
     grid-row: 6;
     font-size: 30px; 
@@ -175,9 +175,8 @@ font-size:  20px ;
 }
 footer{
     border-radius: 20px; 
-  
     grid-column: 1/7;
-    grid-row: 7;
+    grid-row: 7; 
     font-size: 30px; 
     font-style: oblique; 
 }

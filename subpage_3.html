@@ -2,12 +2,112 @@
 <html lang="de">
 <head>
   <meta content="charset=utf-8">
-  <!-- Bitte Namen und Seitennummber einfügen -->
-  <title>SASS Geschachtelte Media Queries</title>
+  <!-- Ibrahim Schechsaher subpage_3 -->
+  <title>SASS operators</title>
   <link href="css/main.css" rel="stylesheet" type="text/css">
   <link href="css/page_3.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <embed class="headerFrame" src="header.html" >
+
+ <h1 id="header">RECHNEN MIT SASS (OPERATORS)</h1>
+<main> 
+<section>
+<div class="beschreiben">
+
+<p >
+<img src="img/logo_sass.png"  class="foto">
+<span class="question" >
+ Hängen manche Elemente in deiner CSS Datei mit anderen zusammen ?
+</span>
+Mit Operatoren kannst du Werte und Farben addieren, subtrahieren, dividieren und multiplizieren.
+ Dadurch kannst du komplexe Zusammenhänge innerhalb deiner CSS Datei erstellen. Funktionen genauso wie in JavaScript.
+Dadurch kannst du die Werte genau so manipulieren wie du möchtest.
+
+Es ist schwer, hier dem Wortspiel zu widerstehen, aber ich werde vorläufig keine medizinischen Witze machen.
+Mit Hilfe von Operatoren können Sie in Ihrem CSS-Code etwas rechnen und können sehr hilfreich sein. 
+Das Beispiel im Sass Guide ist perfekt, um dies zu veranschaulichen:
+<p>
+</div>
+</section> 
+
+<section>
+
+<div class="box"> <h2>Sass</h2>
+    <div class="syntax"  >
+      <pre>
+.container
+    width: 100%
+
+
+article[role="main"]
+    float: left
+width: 600px / 960px * 100%
+
+
+aside[role="complementary"]
+    float: right
+width: 300px / 960px * 100% 
+          </pre> 
+        </div>
+    </div>
+   
+  </section>
+  <section>
+   <div class="box"> <h2>Scss</h2>
+    <div  class="syntax">
+      <pre>
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100 }
+      </pre>
+    </div>
+  </div>
+ </section>
+
+ <section>
+ 
+  <div class="box"> <h2>Css</h2>
+    <div  class="syntax">
+       <pre>
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 62.5%;
+}
+
+aside[role="complementary"]
+{float: right;
+  width: 31.25%; }
+      
+       </pre> </div>
+  </div>
+</section>
+<section>
+
+</section>
+</main>
+  <footer>
+  
+    <p>Copyright © Dimmt Sellier 2018-2019
+  
+      Datenschutz: Diese Website speichert keine Informationen. Da bzgl der DSGVO vieles unklar ist, wurden alle externen Dienste entfernt. Es kann sein, dass dadurch manches nicht mehr optimal dargestellt wird, leider gibt es aktuell aufgrund der rechtlichen Unsicherheit keine Alternative.
+    </p>
+  
+  </footer>
+
+
 </body>
 </html>
