@@ -1,3 +1,138 @@
-.flexContainer { 
+*{
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+body{
+  background-color: rgba(176, 230, 176, 0.281); 
+}
+.header{
+  margin-top: -70px;
+  /****************************++header1*****************************************/
+}
+.header h1{
+text-align: center;
+font-size:60px;
+animation:shadow 5s ease-in-out infinite; 
+}
+@keyframes shadow
+{
+    0%{text-shadow: 8px  8px 9px rgb(23, 184, 9);}
+    50%{text-shadow: -10px 8px 9px rgb(212, 19, 19);}
+    100%{text-shadow: 10px  8px 9px rgba(177, 236, 15, 0.603)e;}
+}
+/*****************************container-main*****************************************************/
+.container_main
+{
+    display: inline-flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+/********************************<aside>************************************************/
+.links,.rechts
+{
+    display: flex;
+    background-color: rgba(217, 224, 147, 0.411);  
+    border-radius: 5%; 
+    border-style: groove; 
+    border-color: rgba(184, 135, 11, 0.548);
+}
+
+.links div,.rechts div
+{
+    width: 200px; 
+}
+aside p{
+   font-style: unset;
+    font-size: 23px;
+
+}
+aside h1{
+    text-align: center; 
+    color: rgba(8, 134, 8, 0.966);
+    
+}
+.rechts h1{
+    text-align: center; 
+    color: red;
+}
+/*********************************container1***********************************************************/
+
+
+.container1
+{
+    width: 70%; 
     display: flex; 
-    border:  #888 2px solid; } 
+    flex-wrap: wrap;
+    flex-direction: column; 
+}
+
+.center , .center2
+{
+    margin: 20px auto;
+    flex-grow: 1; 
+
+}
+
+#besonderswort
+{
+    color:rgb(255, 166, 1);
+}
+
+.containernew 
+{
+    background-color:rgba(42, 43, 42, 0.493);
+    border-radius: 10px; 
+    max-width: 400px;
+}
+
+.containernew pre {
+    color: aliceblue; 
+    font-size: 20px; 
+    font-style: italic; 
+}
+
+.containernew #pre1:hover 
+{
+ 
+    animation: changeColor 3s forwards; 
+}
+	
+	.containernew #pre2:hover {
+ 
+    animation: changeColor 3s forwards;
+}
+
+	 #dieVariablen:hover{
+  animation: changeColor 2s;
+}
+
+@keyframes changeColor
+{
+    from{
+      color: aliceblue; 
+    }
+    to{
+      color: rgb(31, 1, 1); 
+    }
+}
+article p{
+    
+    font-style: oblique; 
+    font-size: 30px;
+
+}
+
+#Beispiel{
+    background-color: rgba(184, 135, 11, 0.548);
+}
+/********************************footer********************************************/
+footer{
+   font-size: 20px;
+    text-align: center;
+    background-color: rgba(177, 154, 154, 0.692);
+    
+
+  
+
+}
