@@ -47,6 +47,9 @@ article {
   background-color: white;
   width: 320px;
 }
+.codebox-footer {
+  margin-left: 10px;
+}
 .codebox-placeholder {
   opacity: 0;
 }
