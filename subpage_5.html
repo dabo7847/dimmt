@@ -13,154 +13,129 @@
   </script>
 <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png">
 </head>
-
 <body background="w3s.png"></body>
-  <header>
-    <embed class="headerFrame" src="header.html" >
-  </header>
+    <embed class="headerFrame" src="header.html">
+    <header>
+      <h1 class="hiddenHeader">sass Tutorial-Seite</h1>
+    </header>
+    <main>
+      <div class="table">
+        <div class ="row">
+          <div class="adsRow"> <!--News of dimmt-->
+            <div class="newsRow">
+                <h2>dimmt-News</h2>
+              <p class="newsItem">
+                <strong>Get A Git</strong><br>
+                Unser vollständiges Repository bei Git-Hub.
+              </p>
+              <p class="newsItem">
+                <strong>Karriere bei dimmt</strong><br>
+                Sie glauben, Sie seien etwas Besonderes? Ernsthaft?
+              </p>
+              <p class="newsItem">
+                <strong>Hamburg</strong><br>
+                Manchmal ist Elbhochwasser. Was dann?
+              </p>
+              <p class="newsItem">
+                  <strong>Gleitsichtbrüllen</strong><br>
+                  Bestellen Sie Ihre Sass-Fan-Brille in unserem Shop!
+              </p>
+              <p class="newsItem">
+                  <strong>Singles in Satrup</strong><br>
+                  Sehen Sie sich um: Bustickets nach Satrup ab 8€.
+              </p>
+              <p>
+                <strong>Adobe Flash</strong><br>
+                Ihr Adobe Flash Player ist veraltet. Klicken Sie hier!
+              </p>
+              <p>
+                <strong>Sonne, Sand & Mehr</strong><br>
+                Gewinnen Sie einen Urlaub auf der Baustelle!
+              </p>
+              <p>
+                <strong>Der Merz ist gekommen</strong><br>
+                Saubere Bierdeckel finden Sie hier.
+              </p>
+            </div>
+          </div>
+          <div class ="mainRow"> <!--Main article row-->
+            <article>
+            <h1>Mixins</h1>
+            <section> <!--Intro-->
+              <div class="plainText">
+                <h2>Mixins - ein nüchterner Blick auf ein sachliches Thema</h2>
+                <p>Sei es im Club, auf der Arbeit oder am Küchentisch: Wann immer das Thema auf sass kommt, erhitzen sich die Gemüter. Während die Einen in der Vererbung einen Ausdruck unserer zivilisatorischen Degeneration sehen, sind für andere geschachtelte Media Queries zu einem Stück alltäglicher Lebensqualität geworden. Doch ein wichtiges Element fehlt meist in der Debatte: Mixins. Grund genug für uns, uns diese kleinen Wunderwerke der Softwareingeneurskunst etwas genauer anzuschauen. Kommen Sie mit auf die Reise und tauche ein in eine Welt, in der Wartbarkeit und Coolness keine Gegensätze mehr sind.</p>
+              </div>
+            </section>
+            <section> <!--Zen-->
+              <div class="plainText">
+                <h2>Mixins and the Art of Code Maintenance</h2>
+                <p>Mit Mixins kann Code recyclet werden. Wie in Funktionen. Man kann sogar Argumente übergeben. Es ist der <b>Hammer</b>! Ein Profi erkennt sofort, wie nützlich das sein kann. Aber so weit bist du noch nicht. Sei nicht so ungeduldig! Alles zu seiner Zeit. Wir gucken uns ersteinmal ein Stück Code an. Das kann zum beispiel folgendermaßen aussehen:</p>
+              </div>
+              <div class="codeWin">
+                <pre>
+      @mixin changeling($farbe){
+        color: $farbe;
+      }
 
-  <article>
-  <h1>Mixins</h1>
-
-  <div class="tabelle">
-    <div class ="zeile">
-      <div class="zelle1">
-        <aside>
-        <div class="newsRow">
-            <h2>dimmt-News</h2>
-          <p class="newsItem">
-            <strong>Get A Git</strong><br>
-            Unser vollständiges Repository bei Git-Hub.
-          </p>
-          <p class="newsItem">
-            <strong>Karriere bei dimmt</strong><br>
-            Sie glauben, Sie seien etwas Besonderes? Ernsthaft?
-          </p>
-          <p class="newsItem">
-            <strong>Hamburg</strong><br>
-            Manchmal ist Elbhochwasser. Was dann?
-          </p>
-          <p class="newsItem">
-              <strong>Gleitsichtbrüllen</strong><br>
-              Bestellen Sie Ihre Sass-Fan-Brille in unserem Shop!
-            </p>
-            <p class="newsItem">
-                <strong>Singles in Satrup</strong><br>
-                Sehen Sie sich um: Bustickets nach Satrup ab 8€.
-            </p>
-            <p>
-              <strong>Adobe Flash</strong><br>
-              Ihr Adobe Flash Player ist veraltet. Klicken Sie hier!
-            </p>
-            <p>
-              <strong>Sonne, Sand & Mehr</strong><br>
-              Gewinnen Sie einen Urlaub auf der Baustelle!
-            </p>
-            <p>
-              <strong>Der Merz ist gekommen</strong><br>
-              Saubere Bierdeckel finden Sie hier.
-            </p>
-            
+      #changeText 
+        @include changeling(#aabbcc);
+                </pre>
+              </div>
+              <br>
+              <div class="plainText">
+                <p>Das wird dann compiliert. Was das ist, solltest du eigentlich wissen, wenn nicht, schlag es halt irgendwo nach, meingott. Sei nicht so unselbstständig! Wenn du es nicht weißt, stell dir einen Zauberer vor. Oder ein Marmeladenbrot. Und wenn das fertig compiliert ist, sieht das Ergebnis so aus:</p>
+              </div>
+              <div class="codeWin">
+                <pre>
+      #changeText {
+        color: #aabbcc;
+      }
+                </pre>
+              </div>
+              <div class="plainText">
+                <p>Und das kann dann jeder Browser lesen. So einfach ist das! Wahrscheinlich musst du das jetzt ersteinmal sacken lassen, bevor du das alles richtig verstanden hast. Überlege dir, welche Rolle Mixins künftig in deinem Leben spielen werden! Wie du diese unerträgliche Leichtigkeit des Deseins mit Freunden thematisieren möchtest. Wenn du bereit bist, probier einfach das Demo hier aus!</p>
+              </div>
+            </section>
+            <section> <!-- Try it! -->
+              <div class="plainText">
+                <h2>Versuche es selbst!</h2>
+                <p>Weiter unten, im Code-Schnipsel siehst du einen Mixins-Aufruf. Erkennst du ihn wieder? Richtig: Es ist der gute alte Changeling-Aufruf, den wir schon aus unserem Beispiel kennen. Trau dich, und probiere sie aus: Gib eine hexadezimale Farbe in das blaue Feld ein und drück enter!</p>
+              </div>
+              <div class ="testBox">
+                @include changeling(<input id="color" type="text" value="#DD0101" onchange="changeBackground(this);" />)
+                <div class="fakeBox" id="coltext"> => Your color, your rules!</div>
+              </div>
+              <div class="plainText">
+                <p>Das war's auch schon mit dem Tutorial. Das Beispiel ist natürlich fake. Sowas geht mit Sass nicht. Dafür braucht man JavaScript. Du bist echt so blöd, dass du geglaubt hast, dass das mit Sass geht? lol! Dann solltest du dir die <a href="https://de.wikipedia.org/wiki/Z1_%28Rechner%29">Grundlagen</a> von Sass nocheinmal angucken! Du hast echt nix kapiert, oder? So wirst du nie zum Profi.</p>
+              </div>
+            </section>
+            </article>
+          </div>
+          <div class="autRow"> <!--Author-Info-->
+            <div class="authorInfo">
+              <aside>
+                <h2>Über den Autor</i></h2>
+                <br>
+                <div class="pictureHalo">
+                  <img class="authorImage" src="img/author5.jpg" alt="Picture of Mark" height="200" width="auto"/>  
+                </div>
+                <br>
+                <p>Mark wurde vor 400 Jahren in den schottischen Highlands geboren. Er studierte Tabellen-Design und Sass in Byzanz und Gütersloh, von wo aus er seine Studienreisen nach Tibet unternahm.</p>
+                <p>Dort arbeitete er als Content-and-Facility-Manager am Hof des Dalai Lama. 1712 erhielt er einen zweifelhaften Ruf an der Universität Barcelona, woraufhin er seine Studien der Liebe an der Universität zu Trier fortsetzte.</p>
+                <p>Im Sommer 1989 beendete er vorzeitig den Kalten Krieg und erfand das Handy.</p>
+                <p>Mark ist Binary Executive Consultant bei dimmt.</p>
+              </aside>
+            </div>
+          </div>
         </div>
-        </aside>
       </div>
-      <div class ="zelle2">
-
-  <section>
-    
-    <div class="plainText">
-      <h2>Mixins - ein nüchterner Blick auf ein sachliches Thema</h2>
-      <p>
-        Sei es im Club, auf der Arbeit oder am Küchentisch: Wann immer das Thema auf sass kommt, erhitzen sich die Gemüter. Während die Einen in der Vererbung einen Ausdruck unserer zivilisatorischen Degeneration sehen, sind für andere geschachtelte Media Queries zu einem Stück alltäglicher Lebensqualität geworden. Doch ein wichtiges Element fehlt meist in der Debatte: Mixins. Grund genug für uns, uns diese kleinen Wunderwerke der Softwareingeneurskunst etwas genauer anzuschauen. Kommen Sie mit auf die Reise und tauche ein in eine Welt, in der Wartbarkeit und Coolness keine Gegensätze mehr sind.
-      </p>
-    </div>
-    <div class="plainText">
-    <h2>Mixins and the Art of Code Maintenance</h2>
-    <p>
-    Mit Mixins kann Code recyclet werden. Wie in Funktionen. Man kann sogar Argumente übergeben. Es ist der <b>Hammer</b>! Ein Profi erkennt sofort, wie nützlich das sein kann. Aber so weit bist du noch nicht. Sei nicht so ungeduldig! Alles zu seiner Zeit. Wir gucken uns ersteinmal ein Stück Code an. Das kann zum beispiel folgendermaßen aussehen:
-    </p>
-    </div>
-  </p>
-
-  <div class="codeWin">
-  <pre>
-@mixin changeling($farbe){
-  color: $farbe;
-}
-
-#changeText 
-  @include changeling(#aabbcc);
-</pre>
-</div>
-<br>
-
-<div class="plainText">
-  <p>Das wird dann compiliert. Was das ist, solltest du eigentlich wissen, wenn nicht, schlag es halt irgendwo nach, meingott. Sei nicht so unselbstständig! Wenn du es nicht weißt, stell dir einen Zauberer vor. Oder ein Marmeladenbrot. Und wenn das fertig compiliert ist, sieht das Ergebnis so aus:</p>
-</div>
-  <div class="codeWin">
-      <pre>
-#changeText {
-  color: #aabbcc;
-}
-</pre>
-    </div>
-    <div class="plainText">
-    <p>
-      Und das kann dann jeder Browser lesen. So einfach ist das! Wahrscheinlich musst du das jetzt ersteinmal sacken lassen, bevor du das alles richtig verstanden hast. Überlege dir, welche Rolle Mixins künftig in deinem Leben spielen werden! Wie du diese unerträgliche Leichtigkeit des Deseins mit Freunden thematisieren möchtest. Wenn du bereit bist, probier einfach das Demo hier aus!
-    </p>
-  </div>
-  </section>
-
-  <section>
-    <div class="plainText">
-  <h2>Versuche es selbst!</h2>
-    <p>Weiter unten, im Code-Schnipsel siehst du einen Mixins-Aufruf. Erkennst du ihn wieder? Richtig: Es ist der gute alte Changeling-Aufruf, den wir schon aus unserem Beispiel kennen. Trau dich, und probiere sie aus: Gib eine hexadezimale Farbe in das blaue Feld ein und drück enter!</p>
-  </div>
-  <div class ="testBox">
-  @include changeling(<input id="color" type="text" value="#DD0101" onchange="changeBackground(this);" />)
-  <div class="fakeBox" id="coltext"> => Your color, your rules!</div>
-  </div>
-  <div class="plainText">
-  <p>
-    Das war's auch schon mit dem Tutorial. Das Beispiel ist natürlich fake. Sowas geht mit Sass nicht. Dafür braucht man JavaScript. Du bist echt so blöd, dass du geglaubt hast, dass das mit Sass geht? lol! Dann solltest du dir die <a href="404">Grundlagen</a> von Sass nocheinmal angucken! Du hast echt nix kapiert, oder? So wirst du nie zum Profi.
-  </p>
-  </div>
-</section>
-</div>
-  <div class="zelle3">
-    <div class="authorInfo">
-      <aside>
-      <!-- <h2><i class="heartCore">&hearts;</i> Über den Autor	<i class="heartCore">&hearts;</i></h2> -->
-      <h2>Über den Autor</i></h2>
-      <br>
-      <div class="pictureHalo">
-          <img class="authorImage" src="img/author5.jpg" alt="Picture of Mark" height="200" width="auto"/>  
+    <main>
+    <footer>
+      <div class="footer">
+        <b class ="blinkWarning">Warnung:</b> Die Code-Schnipsel sind mittels Rotation vor dem Diebstahl geistigen Eigentums geschützt. Außerdem ist Copy und Paste sowieso bad practice. Wie wäre es mal zu lernen, wie man sein eigenes Gehirn verwendet, hm?
       </div>
-      <br>
-      <p>
-      Mark wurde vor 400 Jahren in den schottischen Highlands geboren. Er studierte Tabellen-Design und Sass in Byzanz und Gütersloh, von wo aus er seine Studienreisen nach Tibet unternahm.
-    </p>
-    <p>
-      Dort arbeitete er als Content-and-Facility-Manager am Hof des Dalai Lama. 1712 erhielt er einen zweifelhaften Ruf an der Universität Barcelona, woraufhin er seine Studien der Liebe an der Universität zu Trier fortsetzte.
-    </p>
-    <p>
-      Im Sommer 1989 beendete er vorzeitig den Kalten Krieg und erfand das Handy.
-    </p>
-    <p>
-      Mark ist Binary Executive Consultant bei dimmt.
-    </p>
-      </aside>
-    </div>
-
-  </div>
-</div>
-</div>
-</article>
-<footer>
-  <div class="footer">
-    <b class ="blinkWarning">Warnung:</b> Die Code-Schnipsel sind mittels Rotation vor dem Diebstahl geistigen Eigentums geschützt. Außerdem ist Copy und Paste sowieso bad practice. Wie wäre es mal zu lernen, wie man sein eigenes Gehirn verwendet, hm?
-  </div>
-</footer>
+    </footer>
 <br><br>
 </body>
 </html>

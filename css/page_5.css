@@ -55,7 +55,7 @@ pre {
     color: red;
   }
   
-  @keyframes blinker {
+@keyframes blinker {
     50% {
       opacity: 0;
     }
@@ -73,12 +73,25 @@ pre {
     text-align: center;
 }
 
-.tabelle { display: table; width:99%; margin-left:auto; margin-right:auto;  } 
+.table { 
+    display: table; width:99%; margin-left:auto; margin-right:auto;  
+} 
 
-.zeile { display: table-row; } 
-.zelle1 { display: table-cell; width:10%;  } 
-.zelle2 { display: table-cell; width:70%;  } 
-.zelle3 { display: table-cell; width:20%;  }
+.row { 
+    display: table-row; 
+} 
+
+.adsRow { 
+    display: table-cell; width:10%;  
+} 
+
+.mainRow { 
+    display: table-cell; width:70%;  
+} 
+
+.autRow { 
+    display: table-cell; width:20%;  
+}
 
 .authorInfo {
     background-color: #eca;
@@ -142,12 +155,6 @@ pre {
     opacity: 1;
     box-shadow: 0px 0px 20px 8px rgb(232, 215, 116);
     animation: glow 2s linear infinite alternate;
-}
-
-.heartCore{
-    color: darkorchid;
-    font-size: 35px;
-    display: inline;
 }
 
 @keyframes opacityGlow{
@@ -223,6 +230,10 @@ h1 {
                  0 5px 10px rgba(0,0,0,.25),
                  0 10px 10px rgba(0,0,0,.2),
                  0 20px 20px rgba(0,0,0,.15);
+}
+
+.hiddenHeader{
+    font-size: 1px;
 }
 
 body {
