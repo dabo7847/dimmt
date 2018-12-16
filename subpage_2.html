@@ -2,10 +2,10 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <!-- Bitte Namen und Seitennummber einfügen -->
+  <!-- Mohammed yamen Imam, subpage_2 -->
   <title>SASS Eigenschaft - EIGENSCHAFTNAME</title>
   <link href="css/main.css" rel="stylesheet" type="text/css">
-  <link href="subpage_2.css" rel="stylesheet" type="text/css"> 
+  <link href="css/page_2.css" rel="stylesheet" type="text/css"> 
   
 </head>
 <body>
@@ -14,64 +14,116 @@
      
         <h1> VARIABLEN </h1>
     </header>
+    
    <div class="container_main">
     <aside class="links"> 
-        <p>
-        </p></aside>
-<article class="container1">
+    <div class="divLinks">
+        <h1>DIMMT</h1>
+       
+       
     
-  <section class="center"> 
+        <p>Vererbung: <br> Es geht um 
+          die Vererbung von den 
+          Eigenschaften zwischen den 
+          Klassen in SASS.
+          Dafür wird das Wort 
+          Extend benutzt. </p>
+    
+    
+       
+          <p>Mixen: <br> Ein Mixin ist mit einer
+              wiederverwendbaren Funktion
+               vergleichbar, die auch Parameter 
+               als Variablen entgegennehmen kann.</p>
+      
+      
+      <p>Variablen: <br> Variablen beginnen mit einem 
+        Dollar-Zeichen und werden wie CSS Werte definiert.
+        Sehen Sie sich dafür das in der Beispiele hier an</p>
+      <p>Verschachtlung.. <a href="dimmt.html">mehr</a>  </p>
+    
+       
+      </div>
+        </aside>
+<section class="container1">
+    
+  <article class="center"> 
         <p> Du kannst Variablen benutzen um Informationen in deinem gesamten Stylesheet wiederverwenden zu können.
           Du kannst Werte wie Farben, Schriftarten oder irgendwelche CSS Werte speichern die du später wiederverwenden möchtest.
-            Sass benutzt das<span id="besondrswort"> $ </span> Symbol um aus einem Text eine Variable zu machen.
+            Sass benutzt das<span id="besonderswort"> $ </span> Symbol um aus einem Text eine Variable zu machen.
             Hier ist ein Beispiel:</p>
               
-<section class="containernew">
-<div id="Beispiel"> <h3>SASS</h3> </div>
-<pre id="pre1"> <span id="dieVeriablen">$font-stack: Helvetica,sans-serif;</span>
-$primary-color: #333
+<div class="containernew">
+<div id="Beispiel"> <h3>Code-Beispiel</h3> </div>
+<pre id="pre1"> <span id="dieVariablen">$font-stack: Helvetica,sans-serif;</span>
+$primary-color:<span id="dieVariablen"> #333</span>
                                       
 body { 
-font: 100% <span id="dieVeriablen">$font-stack;</span>
-color: <span id="dieVeriablen">$primary-color;</span>
+font: 100% <span id="dieVariablen">$font-stack;</span>
+color: <span id="dieVariablen">$primary-color;</span>
 }
 </pre> 
 
-</section>
+</div>
 
-  </section>
+  </article>
            
- <section class="center2">
-<p>Wenn Sass verarbeitet wird nimmt es die definierten Variablen für<span id="besondrswort">$font-stack</span> 
-   und <span id="besondrswort"> $primary-color </span> und gibt normales CSS mit den definierten Werten der Variablen zurück.
+ <article class="center2">
+<p>Wenn Sass verarbeitet wird nimmt es die definierten Variablen für<span id="besonderswort">$font-stack</span> 
+   und <span id="besonderswort"> $primary-color </span> und gibt normales CSS mit den definierten Werten der Variablen zurück.
     Das kann sehr mächtig sein wenn mit Markenfarben gearbeitet wird und diese über die gesamte Seite wiederverwendet werden sollen.</p>        
 
 
-<section class="containernew">
-<div id="Beispiel"> <h3>Beispiel</h3> </div>
+<div class="containernew">
+<div id="Beispiel"> <h3>Code-Beispiel</h3> </div>
 <pre id="pre2">body {
-font: 100% Helvetica, sans-serif;
-color: #333;
+font: <span id="dieVariablen">100% Helvetica,</span> <span id="dieVariablen">sans-serif;</span>
+color:<span id="dieVariablen"> #333;</span>
 } 
 </pre> 
-</section>
+</div>
   
- </section>
+ </article>
 
-</article>
+</section>
         <aside class="rechts">
-            <p>Wollen Sie SASS Lernen?
-              Hier Finden Sie die beste online kurse 
-            <div class="Fotoanimation">
-              <img src="img/kurs.png" alt="foto kurs" width="300" height="100">  </div>
-            </p> 
+        <div> <h1>WERBUNG</h1>
+          <h3>SASS/SCSS kurs:</h3>
+             <p> Lerne SASS von der
+kommandozeilen-installa-
+tion bis hin zur 
+vollständigen
+Funktionsreferenz <br> <br>
+du werst lernen: <br>
 
+-Set up a SAAS project <br>
+
+-Use and apply the 
+concept of Segmentation <br>
+
+-Understand SCSS Mixins 
+and SCSS Functions <br>
+
+-Know and apply Best 
+Practices <br>
+
+-Integrate SAAS Variables
+in to your Work <br>
+
+-und viel mehr <br> <br>
+
+<a href="">Informieren</a> Sie sich sofort darüber.
+
+            </p>
+            </div>
             </aside>
           
  </div>
+
       <footer>
           
-          <h3>Für weitre informationen über SASS/SCSS klicen Sie Hier </h3>
+          <h3>Für weitre informationen über SASS/SCSS klicen Sie
+             <a href="dimmt.html">Hier</a>  </h3>
           
          
       </footer>
@@ -79,7 +131,4 @@ color: #333;
   
 
     </body>
-</html>
-
-</body>
 </html>
